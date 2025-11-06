@@ -1,7 +1,5 @@
 # 🌐 Monitoring Assignment 4 — Prometheus & Grafana Dashboards
 
-![Grafana Banner](https://github.com/grafana/grafana/raw/main/public/img/grafana_icon.svg)
-
 
 ## 🧭 Overview
 This project implements a **complete monitoring system** built on **Prometheus** and **Grafana**, featuring three interconnected exporters:
