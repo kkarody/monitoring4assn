@@ -76,7 +76,7 @@ This script continuously performs:
 
 ## Dashboards Overview
 
-### PostgreSQL — Database Dashboard
+### 🐘 PostgreSQL — Database Dashboard
 
 **Purpose:** Monitor internal database health and performance.
 
