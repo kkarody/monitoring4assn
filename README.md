@@ -1,20 +1,20 @@
-# 🌐 Monitoring Assignment 4 — Prometheus & Grafana Dashboards
+# Monitoring Assignment 4 — Prometheus & Grafana Dashboards
 
 
-## 🧭 Overview
+## Overview
 This project implements a **complete monitoring system** built on **Prometheus** and **Grafana**, featuring three interconnected exporters:
 
 | Exporter Type | Description | Tool / Source |
 |----------------|--------------|----------------|
-| 🐘 **Database Exporter** | Tracks PostgreSQL performance (queries, cache, TPS) | `prometheuscommunity/postgres-exporter` |
-| 💻 **Node Exporter** | Monitors CPU, RAM, Disk, and Network usage | `prom/node-exporter` |
-| 🌤 **Custom Exporter** | Collects live metrics from external APIs | Custom `Python Exporter` |
+| **Database Exporter** | Tracks PostgreSQL performance (queries, cache, TPS) | `prometheuscommunity/postgres-exporter` |
+| **Node Exporter** | Monitors CPU, RAM, Disk, and Network usage | `prom/node-exporter` |
+| **Custom Exporter** | Collects live metrics from external APIs | Custom `Python Exporter` |
 
 Together, they provide real-time insights into database health, system performance, and external data — all visualized through interactive Grafana dashboards with automated Telegram alerts.
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 ```
 
 MONITORING-ASSIGNMENT4/
@@ -30,7 +30,7 @@ MONITORING-ASSIGNMENT4/
 
 ## ⚙️ Setup Instructions
 
-### 🐳 1. Start the Monitoring Stack
+### 1. Start the Monitoring Stack
 From your project root:
 ```bash
 docker-compose up -d
@@ -45,7 +45,7 @@ Services launched:
 * **node_exporter** — system metrics
 * **custom_exporter** — external API metrics
 
-### 🔗 2. Access Interfaces
+###  2. Access Interfaces
 
 | Service             | URL                                            | Default Login   |
 | ------------------- | ---------------------------------------------- | --------------- |
@@ -58,7 +58,7 @@ Services launched:
 
 ---
 
-## 💾 Database Load Simulation
+## Database Load Simulation
 
 To generate live metric activity on the PostgreSQL dashboard:
 
@@ -74,9 +74,9 @@ This script continuously performs:
 
 ---
 
-## 📊 Dashboards Overview
+## Dashboards Overview
 
-### 🐘 PostgreSQL — Database Dashboard
+### PostgreSQL — Database Dashboard
 
 **Purpose:** Monitor internal database health and performance.
 
@@ -154,7 +154,7 @@ Instance: custom_exporter:8000
 
 ---
 
-## 🧪 Load Simulation Summary
+## Load Simulation Summary
 
 * **PostgreSQL:** Automated SQL script (`postgres_load_test.sql`) generating active inserts/updates/deletes.
 * **Node Exporter:** Reflects live CPU, RAM, and I/O usage from Docker host.
@@ -164,7 +164,7 @@ This ensures all dashboards display real-time data even during demonstrations.
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 This project demonstrates an end-to-end monitoring solution integrating **system, database, and external data sources** into a unified Grafana environment.
 It showcases:
